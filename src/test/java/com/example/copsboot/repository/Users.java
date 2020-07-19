@@ -10,10 +10,10 @@ import java.util.UUID;
 public class Users {
     private static final PasswordEncoder PASSWORD_ENCODER = new BCryptPasswordEncoder();
 
-    private static final String OFFICER_EMAIL = "officer@example.com";
-    private static final String OFFICER_PASSWORD = "officer";
-    private static final String CAPTAIN_EMAIL = "captain@example.com";
-    private static final String CAPTAIN_PASSWORD = "captain";
+    public static final String OFFICER_EMAIL = "officer@example.com";
+    public static final String OFFICER_PASSWORD = "officer";
+    public static final String CAPTAIN_EMAIL = "captain@example.com";
+    public static final String CAPTAIN_PASSWORD = "captain";
 
     private static User OFFICER = User.createOfficer(newRandomId(), OFFICER_EMAIL, PASSWORD_ENCODER.encode(OFFICER_PASSWORD));
     private static User CAPTAIN = User.createCaptain(newRandomId(), CAPTAIN_EMAIL, PASSWORD_ENCODER.encode(CAPTAIN_PASSWORD));
